@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery-page{
+    background: #232429;
+}
+
+.wrapper{
+    /* height: 100vh; */
+    margin: 50px; 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 150px);
+    /* position: relative; */
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.w1{
+    grid-column: span 1;
+}
+
+.w2{
+    grid-column: span 2;
+}
+
+.w3{
+    grid-column: span 3;
+}
+
+.w4{
+    grid-column: span 4;
+}
+
+.w5{
+    grid-column: span 5;
+}
+
+.h1{
+    grid-row: span 1;
+}
+
+.h2{
+    grid-row: span 2;
+}
+.h3{
+    grid-row: span 3;
+}
+.h4{
+    grid-row: span 4;
+}
+.h5{
+    grid-row: span 5;
+}
+.h6{
+    grid-row: span 6;
+}
+
+
+.wrapper .item img:hover{
+    opacity: .6; 
+}
+
+/* Image title placement */
+
+.space{
+    position: relative;
+    top: 50px;
+}
+
+span#imgTitle{
+    position: absolute;
+    top: -83;
+    left: -76;
+}
+
+span#imgTitle > h1{
+    color: white;
+    font-size: 5rem;
+    font-weight: 600;
+} 
+
+span#closeIcon{
+    position: absolute;
+    top: -70;
+    right: -55;
+}
+
+span#closeIcon > i{
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 300;
+}
+
+.space > img{
+    object-fit: contain;
+}
+
+/* Previous and Next Button */
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border: none;
+    outline: none;
+    height: 100%;
+    background-color: transparent;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.65);
+    border: none;
+    outline: none;
+  }
+  

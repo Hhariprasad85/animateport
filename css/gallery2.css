@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.black-bg{
+    background-image: linear-gradient(180deg, #170e0e, #000000bf);
+    padding: 6% 14%;
+}
+
+/* Page Header Title Section Starts Here */
+.page-header-title h1{
+    font-size: 3.9rem;
+    color: #c0c0c0;
+}
+
+.page-header-title p{
+    padding-left: 50px;
+    font-size: 1.2rem;
+    color: #c0c0c0;
+}
+/* Page Header Title Section Ends Here */
+
+.header-section{
+    border: 1px solid rgb(20, 18, 18);    
+    display: grid;
+    height: 100%;
+    grid-gap: 5px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(150, minmax(150, 200));
+}
+
+.box {
+    border: 1px solid rgb(20, 18, 18);
+}
+
+.h-wide.one{
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.box.h-wide.one img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.h-small.two{
+    grid-column: 4 /5;
+    grid-row: 1 / 4;   
+}
+
+.box.h-small.two img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box.h-wide.three{
+    grid-column: 5/8;
+    grid-row: 1/4;
+}
+
+.box.h-wide.three img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box.h-wide-falf.four{
+    grid-column: 1/3;
+    grid-row: 4/6;
+}
+
+.box.h-wide-falf img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box.h-wide.five{
+    grid-column: 3/6;
+    grid-row: 4/8;
+}
+
+.box.h-wide.five img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box.h-tall.six{
+    grid-column: 6/8;
+    grid-row: 4/8;
+}
+
+.box.h-tall.six img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box.h-tall-falf.seven{
+    grid-column: 1/2;
+    grid-row: 6/9;
+}
+
+.box.h-tall-falf.seven img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box.h-small.eight{
+    grid-column: 2/3;
+    grid-row: 6/9;
+}
+
+.box.h-small.eight img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box.h-wide-long.nine{
+    grid-column: auto;
+    grid-column: 2 / 6;
+    grid-row: 9/9;
+}
+
+.box.h-wide-long.nine img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Header Section Ends Here */
+
+/* Body Section Starts Here */
+
+.body-section{
+    border: 1px solid rgb(20, 18, 18);
+    /* background-image: linear-gradient(270deg, rgb(26, 25, 25) , rgb(26, 25, 25)); */
+    /* padding: 90px 50px; */
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c0c0c0;
+}
+
+.body-section h1{
+    font-size: 4.5rem;
+}
+
+/* Body Section Ends Here */
+
+/* Footer Section Starts Here */
+.footer-section{
+    border: 1px solid rgb(20, 18, 18);
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;   
+}
+
+.second.small-footer img{
+    /* background-image: url('../img/gallery/flower-729514_640.jpg'); */
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.third.wide-footer img{
+    /* background-image: url('../img/gallery/dandelion-463928_640.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.ninth-f-v-big img{
+    color: #c0c0c0;
+    border: 1px solid rgb(20, 18, 18);
+    grid-row: 7 / 12;
+    grid-column: 2 / 6;
+    /* background-image: url('../img/gallery/dandelion-3094349_640.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.tenth.f-hf-small img{
+    color: #c0c0c0;
+    border: 1px solid rgb(20, 18, 18);
+    grid-row: 9 / 12;
+    grid-column: 1 / 2;
+    /* background-image: url('../img/gallery/nature-3184889_640.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.eleventh.f-v-small{
+    color: #c0c0c0;
+    border: 1px solid rgb(20, 18, 18);
+    grid-row: 9 / 10;
+    grid-column: 6 / 9;
+    padding: 0 5px;
+}
+
+.eleventh.f-v-small h5{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.eleventh.f-v-small p{
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.twelth.v-big img{
+    color: #c0c0c0;
+    border: 1px solid rgb(20, 18, 18);
+    grid-row: 10 / 12;
+    grid-column: 6 / 9;
+    /* background-image: url('../img/gallery/cat-2536662_640.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}

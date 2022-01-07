@@ -1,0 +1,163 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Web Fonts 
+	================================================== -->
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="./css/gallery-anim.css"> -->
+    <link rel="stylesheet" href="./css/simple-lightbox.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/g-demo.css"> -->
+    <title>Grid Gallery</title>
+    <style>
+        
+        /* First Section */
+        
+        /* Second Section */
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: start;
+            justify-items: center;
+        }
+
+        .sl-wrapper .sl-image .sl-caption{
+        left: -262px;
+        text-transform:uppercase;
+        font-size: 3rem;
+        background: none;
+        color: #fff;
+    }
+
+    /* .sl-wrapper .sl-image img{
+        max-width: 80%;
+        height: 80% !important;
+    } */
+
+    .sl-wrapper .sl-image .sl-caption.pos-top{
+        top: -80px;
+        font-family: 'Muli', sans-serif;
+        font-weight: 800;
+    }
+
+    .sl-overlay{
+        background: #000;
+        opacity: .9;
+    }
+
+    .sl-image{
+      width: 58% !important;
+      height: 60% !important;
+      top: 80px !important;
+      left: 270px !important;
+    }
+
+    .gallery a img{
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .gallery a img:nth-child(1) {
+        grid-column: span 2;
+        grid-row: span 1;
+        justify-items: stretch;
+      }
+
+      .gallery a img:nth-child(2) {
+        grid-column: span 1;
+        grid-row: span 1;
+        justify-items: stretch;
+      }
+
+      .gallery a img:nth-child(3) {
+        grid-column: span 2;
+        grid-row: span 1;
+        justify-items: stretch;
+      }
+
+      .gallery a img:nth-child(4) {
+        grid-column: span 1;
+        grid-row: span 2;
+        justify-items: stretch;
+      }
+
+      .gallery a img:nth-child(8) {
+        grid-column: span 3;
+        grid-row: span 1;
+        justify-items: stretch;
+      }
+
+      .gallery a img:nth-child(9) {
+        grid-column: span 1;
+        grid-row: span 2;
+        justify-items: stretch;
+      }
+
+      .gallery a img:nth-child(10) {
+        grid-column: span 2;
+        grid-row: span 1;
+        justify-items: stretch;
+      }
+
+      .gallery a img:nth-child(11) {
+        grid-column: span 2;
+        grid-row: span 1;
+        justify-items: stretch;
+      }
+
+    </style>
+</head>
+<body>  
+  <div id="mi">
+     
+    <div id="section1">
+      <iframe src="./animate.html" style="height:120vh;width:100%;" frameBorder="0" title="Iframe Example"></iframe>
+    </div>
+    <div class="gallery">   
+        <a href="./img/fulls/image1.jpg"><img src="./img/thumb/thumb1.jpg" width="700" height="300" alt="" title="Sea Shore"/></a>
+        <a href="./img/fulls/image2.jpg"><img src="./img/thumb/thumb2.jpg" width="500" height="300" alt="" title="Garden"/></a>
+        <a href="./img/fulls/image3.jpg"><img src="./img/thumb/thumb3.jpg" width="700" height="300" alt="" title="Object"/></a>
+        <a href="./img/fulls/image4.jpg"><img src="./img/thumb/thumb4.jpg" width="500" height="300" alt="" title="Fireman"/></a>
+        <a href="./img/fulls/image5.jpg"><img src="./img/thumb/thumb5.jpg" width="700" height="300" alt="" title="Cups"/></a>
+        <a href="./img/fulls/image6.jpg"><img src="./img/thumb/thumb6.jpg" width="500" height="300" alt="" title="Sea Shore"/></a>
+        <div class="clear"></div>
+    </div>
+        <div class='cursor' id="cursor"></div>
+        <div class='cursor2' id="cursor2"></div>
+        <div class='cursor3' id="cursor3"></div>
+  </div>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/simple-lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="./js/custom.js"></script>
+    
+    <script>    
+        // As A Vanilla JavaScript Plugin
+        var gallery = new SimpleLightbox('.gallery a', { 
+            nav:false, 
+            close:false,
+            captions:true,
+            captionDelay:0,
+            captionPosition: 'top',
+            showCounter:false,
+            doubleTapZoom: 2,
+            maxZoom:6,
+            focus:true,
+            animationSpeed: 50,
+            fadeSpeed: 50,
+            widthRatio:0.85,
+            heightRatio:0.7
+        }); 
+      </script>
+</body>
+</html>

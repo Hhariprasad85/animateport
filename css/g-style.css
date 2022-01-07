@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+    background: #222;
+}
+
+.wrapper{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    margin: 80px;
+    grid-auto-flow: dense;
+}
+
+.wrapper .box :nth-child(1){
+    grid-column: span 1;
+    grid-row: span 1;
+}
